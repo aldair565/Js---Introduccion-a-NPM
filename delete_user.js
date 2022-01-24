@@ -1,10 +1,16 @@
 const axios = require('axios');
 
-async function makeDeleteRequest(userNum) {
+async function makeDeleteRequest() {
 
-    // let res = await ;
+    let params = {
+        id: 2
+    };
 
-    console.log(res.status);
+    let res = await axios.delete('http://localhost:3000/users',{headers: params})
+    .then(res => {
+        console.log(res.status);
+    });
+
 }
 
 makeDeleteRequest();
