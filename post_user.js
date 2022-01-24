@@ -3,7 +3,7 @@ const axios = require('axios');
 async function makePostRequest() {
 
     params = { //parametros a guardar
-        id: 7,
+        id: 7, //en lugar de 7 es 6, realice un post de prueba y se agrego un id 6
         first_name: 'Aldair',
         last_name: 'Meraz',
         email: 'brolyk666@gmail.com'
